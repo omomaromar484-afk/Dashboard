@@ -1,0 +1,183 @@
+*{  
+    padding: 0;  
+    margin: 0;  
+    color: white;  
+    font-family: sans-serif;  
+}  
+
+body{  
+    background-color:#001;  
+    display: flex;  
+}  
+
+.profile{  
+    display: flex;  
+    align-items: center;  
+    gap: 30px;
+}  
+
+.profile h2{  
+    font-size: 20px;  
+    text-transform: capitalize;  
+}          
+
+.menue{  
+    width: 60px;  
+    background-color: #123;  
+    height: 100vh;  
+    padding: 20px;  
+    overflow: hidden;  
+}  
+
+.menue:hover{  
+    width: 260px;  
+    transition: .5s;  
+}  
+
+ul{  
+    list-style: none;  
+    position: relative;  
+    height: 95%;  
+}  
+
+ul li a{  
+    display: flex;  
+    align-items: center;  
+    gap: 40px;  
+    text-decoration: none;  
+    padding: 10px;  
+    margin: 10px 0;  
+    border-radius: 8px;  
+    transition: .5s;  
+}  
+
+ul li a:hover, .active, .data-info .box:hover, td:hover{  
+    background-color: #ffffff55;  
+}  
+
+.log-out{  
+    position: absolute;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+.log-out a{  
+    background-color: #a00;  
+}  
+
+ul li a i{  
+    font-size: 30px;  
+}  
+
+.img-box{  
+    width:50px;  
+    height: 50px;  
+    border-radius: 50%;  
+    overflow: hidden;  
+    border: 3px solid white;  
+    flex-shrink: 0;  
+}  
+
+.img-box img{  
+    width: 100%;  
+}  
+
+.content{  
+    width: 100%;  
+    margin: 10px;  
+}  
+
+.title-info{  
+    background-color: darkblue;  
+    margin: 10px 0;  
+    padding: 10px;  
+    border-radius: 8px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+}  
+
+.data-info{  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+    gap: 10px;  
+}  
+
+/* الكروت الأساسية */
+.data-info .box{  
+    height: 150px;  
+    width: 150px;  
+    flex-grow: 1;  
+    border-radius: 8px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-around;  
+    transition: .3s;  
+}  
+
+/* ألوان مختلفة لكل كرت */
+.data-info .box.users{ background-color: #1E88E5; }     /* أزرق */
+.data-info .box.posts{ background-color: #43A047; }     /* أخضر */
+.data-info .box.products{ background-color: #FB8C00; }  /* برتقالي */
+.data-info .box.revenue{ background-color: #8E24AA; }   /* بنفسجي */
+
+.data-info .box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.data-info .box i{  
+    font-size:35px;  
+    background: rgba(255, 255, 255, 0.2);  
+    padding: 12px;  
+    border-radius: 50%;  
+}  
+
+.data-info .box .data{  
+    text-align: center;  
+}  
+
+.data-info .box .data span{  
+    font-size: 30px;  
+}  
+
+table{  
+    width: 100%;  
+    text-align: center;  
+    border-spacing: 8px;  
+}  
+
+th,td{  
+    background-color: #123;  
+    padding: 6px;  
+    border-radius: 8px;  
+}  
+
+/* لون مميز للهيدر */
+th{  
+    background-color: #0863bf;  
+}  
+
+/* تباين في الصفوف */
+tr:nth-child(even) td {
+    background-color: #0d223d;
+}
+tr:nth-child(odd) td {
+    background-color: #123;
+}
+
+.price,.count{  
+    padding: 6px;  
+    border-radius: 6px;  
+}  
+
+.price{  
+    background-color:green ;  
+}  
+
+.count{  
+    background-color: gold;  
+    color:black;  
+}
